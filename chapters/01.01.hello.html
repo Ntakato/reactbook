@@ -12,7 +12,15 @@
     <script src="react/build/react-dom.js"></script>
     <script>
       ReactDOM.render(
-        React.DOM.h1(null, "Hello world!"),
+        React.DOM.h1(
+          { id: "hoge" },
+          "Hello world!",
+          React.DOM.span(null,
+          "piyo",
+          React.DOM.span(null,"xxx"),
+          "hohoho"
+          ),
+        ),
         document.getElementById("app")
       );
     </script>
